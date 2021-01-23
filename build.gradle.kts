@@ -3,8 +3,5 @@ plugins {
 }
 
 subprojects {
-
   group = "com.karvozavr"
-
-
 }
