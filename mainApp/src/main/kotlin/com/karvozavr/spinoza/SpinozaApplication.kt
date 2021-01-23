@@ -8,6 +8,5 @@ class SpinozaApplication
 
 
 fun main(args: Array<String>) {
-    @Suppress("SpreadOperator")
     runApplication<SpinozaApplication>(*args)
 }

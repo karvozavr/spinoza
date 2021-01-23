@@ -17,9 +17,9 @@ repositories {
 
 plugins {
     java
+    kotlin("jvm")
     id("org.springframework.boot") version "2.4.2"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
-    kotlin("jvm")
     kotlin("plugin.spring") version "1.4.21"
     id("io.gitlab.arturbosch.detekt") version "1.15.0"
 }
@@ -51,5 +51,6 @@ tasks.withType<Test> {
 }
 
 detekt {
+    config = files("${project.parent?.projectDir}/detekt/config.yml")
     buildUponDefaultConfig = true
 }
