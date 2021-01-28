@@ -1,3 +1,5 @@
+![Deploy to Amazon ECS](https://github.com/karvozavr/spinoza/workflows/Deploy%20to%20Amazon%20ECS/badge.svg?branch=main)
+
 # spinoza backend
 
 Spinoza — is a web service currently capable of giving you the "hello" page. Yet, there is more to come 😄.
