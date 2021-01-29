@@ -63,6 +63,18 @@ jobs:
         ./pushImage.sh $IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
+    - name: Archive jar artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: spinoza-app
+        path: spinozaApp/build/libs/*.jar
+    
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v2
+      with:
+        name: check-reports
+        path: spinozaApp/build/reports
+
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
