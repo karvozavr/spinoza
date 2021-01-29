@@ -13,7 +13,7 @@ Build and run with gradle:
 
 Build and run with Docker:
 ```bash
-docker-compose up
+./clean_and_run.sh
 ```
 
 ## Deploy
