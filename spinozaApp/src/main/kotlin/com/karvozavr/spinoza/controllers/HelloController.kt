@@ -10,6 +10,6 @@ class HelloController {
 
   @GetMapping("/")
   fun getHelloMessage(): ResponseEntity<String> {
-    return ResponseEntity<String>("<h1>Hello, this is Spinoza server v1.1</h1>", HttpStatus.OK)
+    return ResponseEntity<String>("<h1>Hello, this is Spinoza server v1.2</h1>", HttpStatus.OK)
   }
 }
