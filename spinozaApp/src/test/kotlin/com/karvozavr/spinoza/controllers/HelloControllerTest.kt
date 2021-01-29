@@ -21,6 +21,6 @@ class HelloControllerTest {
             .andExpect { status { is2xxSuccessful() } }
             .andReturn()
             .response.contentAsString
-            .apply { assertTrue(contains("<h1>Hello, this is Spinoza server v1.1</h1>")) }
+            .apply { assertTrue(contains("<h1>Hello, this is Spinoza server v1.2</h1>")) }
     }
 }
